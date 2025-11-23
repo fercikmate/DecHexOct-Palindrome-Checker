@@ -1,4 +1,4 @@
-#include "lib.h"
+#include "palindrome.h"
 #pragma CHECK_MISRA("-20.9") /*Allow printf scanf */
 #pragma CHECK_MISRA("-5.7") /*Allow reusable variables */
 #pragma CHECK_MISRA("-20.4") /*Allow dynamic memory allocation */
@@ -180,7 +180,7 @@ void addToList(struct PalindromeList **head, struct PalindromeList **tail, const
     {
         /*First element*/
         *head = newPalindrome;
-        *tail = *head;
+        *tail = newPalindrome;
     }
     else
     {

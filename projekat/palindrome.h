@@ -1,5 +1,5 @@
-#ifndef LIB_H
-#define LIB_H
+#ifndef PALINDROME_H
+#define PALINDROME_H
 #include <stdio.h>
 #include <stdint.h>
 #include <inttypes.h>
@@ -12,9 +12,9 @@ struct PalindromeList {
 };
 
 void getParameters(int_least32_t *getNumber, int_least8_t *getSystem);
-void findPalindromes(int_least32_t findNumber, int_least8_t findSystem);
-int_least32_t reverseInBase(int_least32_t ReverseNumber, int_least8_t ReverseBase);
+void findPalindromes(const int_least32_t findNumber, const int_least8_t findSystem);
+int_least32_t reverseInBase(const int_least32_t ReverseNumber, const int_least8_t ReverseBase);
 void addToList(struct PalindromeList **head, struct PalindromeList **tail, int_least32_t FoundNumber);
-void printPalindromes(struct PalindromeList *head);
+void printPalindromes(const struct PalindromeList *head);
 
 #endif
